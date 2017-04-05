@@ -58,16 +58,22 @@ function processText() {
   });
 }
 processText();
-
+var htmlCreated = false;
 document.getElementById("createHTML")
   .addEventListener("click", function() {
     this.classList.add("active");
     canvas.innerHTML = "";
     canvas.appendChild(textD3Obj.createHTML());
+    htmlCreated = true;
   });
 
 document.getElementById("break")
   .addEventListener("click", function() {
+    if (!htmlCreated) {
+      canvas.innerHTML = "";
+      canvas.appendChild(textD3Obj.createHTML());
+      htmlCreated = true;
+    }
     this.classList.add("active");
     canvas.innerHTML = "";
     canvas.appendChild(textD3Obj.createHTML());
