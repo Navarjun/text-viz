@@ -1,0 +1,49 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+div.canvas {
+  margin-top: 40px;
+  font-size: 1.2em;
+  width: 500px;
+  margin: auto;
+  float: left;
+}
+
+div.btn-group-vertical {
+  width: 220px;
+  float: left;
+  margin-right: 100px;
+}
+
+button.btn.active {
+  background-color: rgba(200, 200, 250, 1);
+}
+
+span {
+  transition: 2s all;
+}
+
+span.sentence {
+  /*display: block;*/
+}
+
+span.time {
+  transition: all 5s;
+  font-weight: bold;
+}
+
+sentence {
+  position: absolute;
+  transition: all 0.7s;
+}
+
+word {
+  position: absolute;
+  transition: all 0.7s;
+}
